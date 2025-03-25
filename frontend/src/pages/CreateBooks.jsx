@@ -3,6 +3,8 @@ import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+
+
 const CreateBooks = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -49,8 +51,10 @@ const CreateBooks = () => {
               <label className="my-4">Author</label>
               <input 
                 type="text"
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
+                value={author} // controlled component -- defines the current value
+                onChange={(e) => setAuthor(e.target.value)} // event handler - gives OR updates the current value
+                // e.target refers to the element that triggered the event (input)
+                // e.target.value is the actual value entered by the user in the input field
                 className="border-2 border-gray-500 px-4 py-2 w-full"
                 />
               </div>

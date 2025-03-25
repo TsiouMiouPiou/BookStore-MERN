@@ -1,7 +1,7 @@
-import  Book from '../models/book.model.js';
+import Book from '../models/book.model.js';
 
 // SAVE A BOOK
-export const createBook = async (req, res) => {
+    export const createBook = async (req, res) => {
 
     const book = req.body;
     if(!book.title || !book.author || !book.publishYear){
@@ -83,3 +83,4 @@ export const createBook = async (req, res) => {
         res.status(500).json({success: false, msg: "Error to delete"});
     }
 };
+

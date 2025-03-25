@@ -27,7 +27,7 @@ const EditBook = () => {
         alert("There is an error check the log")
         console.log(error);
       })
-  }, [id])
+  }, [])
 
   const handleEditBook = () => {
     const data = {
@@ -77,7 +77,7 @@ const EditBook = () => {
               <label className="my-4">Publish Year</label>
               <input 
                 type="text"
-                value={publishYear}
+                value= {publishYear}
                 onChange={(e) => setPublishYear(e.target.value)}
                 className="border-2 border-gray-500 px-4 py-2 w-full"
                 />

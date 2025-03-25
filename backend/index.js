@@ -11,15 +11,7 @@ const port = 5000;
 // Middleware
 app.use(express.json());
 app.use(cors());
-// app.use(
-//     cors({
-//         origin: 'http://localhost:3000',
-//         method: ['GET', 'POST', 'PUT', 'DELETE'], 
-//         allowedHeaders: ['Content-Type'], 
-//     })
-// )
 app.use('/books', bookRouter )
-
 
 app.listen(port, () => {
     connectDB();
