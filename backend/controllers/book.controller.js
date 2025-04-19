@@ -10,7 +10,7 @@ import Book from '../models/book.model.js';
     const newbook = new Book(book)
     try {
         await newbook.save();
-      res.status(200).json({success: true, data: newbook}); 
+        res.status(200).json({success: true, data: newbook}); 
     } catch (error) {
         console.log(error.messaage);
         res.status(500).json({success: false, msg: "Error post the book"});
@@ -59,7 +59,7 @@ import Book from '../models/book.model.js';
     }
         const book = await Book.findByIdAndUpdate(id, req.body, {new: true});
         if(!book){
-            return res.status(404).json({succeess: false, msg: "Book Not found"});
+            return res.status(404).json({success: false, msg: "Book Not found"});
         }
             return res.status(200).json({success: true, data: book});
     } 
