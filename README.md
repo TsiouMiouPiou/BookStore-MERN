@@ -17,27 +17,34 @@ book preferences.
 # Installation
 
 1. Paste on Terminal:
-```bash https://github.com/TsiouMiouPiou/BookStore-MERN.git```
+```bash 
+https://github.com/TsiouMiouPiou/BookStore-MERN.git
+```
 
 2. Install Dependencies:
 ```bash 
-npm install```
+npm install
+```
 
 3. Change Backend Directory
 ```bash 
-cd backend```
+cd backend
+```
 
 4. Start Server:
 ```bash 
-npm run dev```
+npm run dev
+```
 
 5. Change Frontend Directory:
 ```bash 
-cd frontend```
+cd frontend
+```
 
 6. Start Frontend:
 ```bash 
-npm run dev```
+npm run dev
+```
 
 
 
